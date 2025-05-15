@@ -56,3 +56,17 @@ $(document).ready(() => {
         }
     })
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) { // Only for mobile
+                const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+                dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                e.preventDefault(); // Prevent default link behavior
+            }
+        });
+    });
+});

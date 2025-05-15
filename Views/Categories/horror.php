@@ -2,7 +2,4 @@
 <?php require_once 'Views/layout/nav.php' ?>
 
  
-<h1>hello</h1>
-  
-
    <?php require_once 'Views/layout/footer.php' ?>
